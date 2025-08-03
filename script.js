@@ -24,4 +24,3 @@ textarea.addEventListener('input', () => {
   // hamburger.addEventListener('click', () => {
   //   navLinks.classList.toggle('show');
   // });
-

@@ -287,7 +287,7 @@ main hr{
 .fifthSection{
     max-width: 80vw;
     margin: auto;
-    height: 1800px;
+    height: 1000px;
 }
 .fifthSection h1{
     font-size: 3.8rem;
@@ -302,7 +302,7 @@ main hr{
     color: white;
     background-color: #191554;
     border-radius: 5px;
-    margin-left:667px;
+    margin-left:772px;
     margin-top: -15px;
 }
 .emailid{
@@ -334,30 +334,41 @@ main hr{
     box-sizing: border-box;
 }
 .submit-btn {
-  margin: 25px 105px 14px 907px;
-  padding: 12px 24px;
-  width: 135px;
-  height: auto;
-  background-color: #726dd4;
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  font-family: "Outfit", sans-serif;
-  transition: background 0.3s ease;
+    margin: 25px 105px 14px 907px;
+    padding: 12px 24px;
+    width: 135px;
+    height: auto;
+    background-color: #726dd4;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: "Outfit", sans-serif;
+    transition: background 0.3s ease;
 }
 .fifthSection p{
     margin-left: 185px;
     color: gray;
     font-size: 1.22rem;
 }
+.fifthSection .social-icons{
+    margin: 5px 646px 5px 185px;
+}
 .fifthSection i{
-    padding: 50px 50px 50px 50px;
-    margin: -34px -233px -146px 139px;
+    margin: 4px 15px 1px 2px;
+    font-size: 25px;
+    color:white;
+}
+footer{
+    background-color: rgb(6, 5, 5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 20px;
-    color: white;
+    height: 80px;
+    color: gray;
 }
 @media screen and (max-width: 2800px) {
     main hr{
