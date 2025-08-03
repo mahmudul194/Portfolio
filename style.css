@@ -6,6 +6,26 @@ body{
     background-color: rgb(10 10 31);
     color: white;
     font-family: "Outfit", sans-serif;
+    /* scrollbar-width: thin; 
+    scrollbar-color: #888 transparent; */
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6c6969;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
 }
 .left{
     font-size: 2.4rem;
@@ -91,8 +111,8 @@ ul li a:hover{
     position: relative;
 }
 button{
-    padding-top: 26px;
-    padding-bottom: 48px;
+    padding-top: 15px;
+    padding-bottom: 45px;
     background-color:#726dd4;
     margin-left: -725px;
     margin-top: 441px;
@@ -103,6 +123,8 @@ button{
     border-radius: 8px;
     border: none;
     cursor: pointer;
+    font-family:"Outfit", sans-serif;
+    transition: background 0.3s ease
 }
 .gitimg{
     height: 40px;
@@ -127,7 +149,7 @@ button a{
 .secondSection{
     max-width: 80vw;
     margin: auto;
-    height: 555px;
+    height: 600px;
 }
 main hr{
     border: 0;
@@ -136,7 +158,8 @@ main hr{
     margin: 60px -168px;
 }
 .secondSection h1{
-    font-size: 1.99rem;
+    font-size: 2.88rem;
+    margin-top: 121px
 }
 .text-gray{
     color: gray;
@@ -161,10 +184,11 @@ main hr{
 .thirdSection{
     max-width: 80vw;
     margin: auto;
-    height: 2500px;
+    height: 1900px;
 }
 .thirdSection h1{
     font-size: 1.99rem;
+    margin-top: 140px;
 }
 
 .porject-container{
@@ -211,6 +235,7 @@ main hr{
     border-radius: 5px;
     cursor: pointer;
     width: 30%;
+    transition: background 0.3s ease
 }
 .content button:hover{
     background-color: #645edb;
@@ -231,8 +256,109 @@ main hr{
     margin-top: 40px;
     margin-left: 115px;
 }
-
-
+.fourthSection{
+    max-width: 80vw;
+    margin: auto;
+    height: 580px;
+}
+.AboutMe h1{
+    font-size: 3.4rem;
+    margin-top: 170px;
+    margin-left: 186px;
+}
+.AboutMe h2{
+    width: 50%;
+    font-size: 1.5rem;
+    margin-left: 515px;
+    margin-top: -58px;
+}
+.AboutMe p{
+    width: 40%;
+    line-height: 30px;
+    color: rgb(183, 180, 180);
+    margin-left: 515px;
+    margin-top: 25px;
+}
+.AboutMe div{
+    font-size: 1.2rem;
+    margin-left: 515px;
+    margin-top: 15px;
+}
+.fifthSection{
+    max-width: 80vw;
+    margin: auto;
+    height: 1800px;
+}
+.fifthSection h1{
+    font-size: 3.8rem;
+    margin-top: 150px;
+    margin-left: 180px;
+}
+.nameinput{
+    padding: 15px 190px 15px 24px;
+    font-size: 15px;
+    font-family: "Outfit", sans-serif;
+    border: none;
+    color: white;
+    background-color: #191554;
+    border-radius: 5px;
+    margin-left:667px;
+    margin-top: -15px;
+}
+.emailid{
+    padding: 15px 190px 15px 24px;
+    font-size: 15px;
+    font-family: "Outfit", sans-serif;
+    border: none;
+    color: white;
+    background-color: #191554;
+    border-radius: 5px;
+    margin-left: 772px;
+    margin-top: 35px;
+}
+.messageinput{
+    padding: 20px 15px 20px 15px;
+    height:150px;
+    width: 420px;
+    font-size: 15px;
+    font-family: "Outfit", sans-serif;
+    border: none;
+    color: white;
+    background-color: #191554;
+    border-radius: 5px;
+    margin-left: 772px;
+    margin-top: 40px;
+    resize: none;
+    overflow-y: hidden;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+.submit-btn {
+  margin: 25px 105px 14px 907px;
+  padding: 12px 24px;
+  width: 135px;
+  height: auto;
+  background-color: #726dd4;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: "Outfit", sans-serif;
+  transition: background 0.3s ease;
+}
+.fifthSection p{
+    margin-left: 185px;
+    color: gray;
+    font-size: 1.22rem;
+}
+.fifthSection i{
+    padding: 50px 50px 50px 50px;
+    margin: -34px -233px -146px 139px;
+    font-size: 20px;
+    color: white;
+}
 @media screen and (max-width: 2800px) {
     main hr{
         margin: 60px -110px;
@@ -240,7 +366,7 @@ main hr{
     .card img{
         margin: 50px 35px;
     }
-    button{
+     button{
         margin-left:-710px;
         margin-top: 399px;
     }

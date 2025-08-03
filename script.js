@@ -11,7 +11,12 @@
         navbar.classList.remove('scrolled');
     }
 });
+const textarea = document.querySelector('.messageinput');
 
+textarea.addEventListener('input', () => {
+  textarea.style.height = 'auto'; // reset
+  textarea.style.height = textarea.scrollHeight + 'px';
+});
 
   // const hamburger = document.querySelector('.hamburger');
   // const navLinks = document.querySelector('nav ul');
