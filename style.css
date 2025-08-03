@@ -6,6 +6,7 @@ body{
     background-color: rgb(10 10 31);
     color: white;
     font-family: "Outfit", sans-serif;
+    
     /* scrollbar-width: thin; 
     scrollbar-color: #888 transparent; */
 }
@@ -304,7 +305,7 @@ main hr{
     color: white;
     background-color: #191554;
     border-radius: 5px;
-    margin-left: 772px;
+    margin-left:772px;
     margin-top: 35px;
 }
 .messageinput{
@@ -317,7 +318,7 @@ main hr{
     color: white;
     background-color: #191554;
     border-radius: 5px;
-    margin-left: 772px;
+    margin-left:772px;
     margin-top: 40px;
     resize: none;
     overflow-y: hidden;
@@ -373,14 +374,15 @@ footer{
 @media screen and (max-width: 350px) {
   nav {
     flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 2vw; /* less horizontal padding */
   }
 
   .right {
     flex-direction: column;
-
     position: relative;
+    margin-left:-185px;
   }
 
   .hamburger {
@@ -390,7 +392,7 @@ footer{
   .nav-links {
     display: none;
     flex-direction: column;
-    width: 200px;
+    width: 100vw;
     background-color: #0e0e46;
     position: absolute;
     top: 60px;
@@ -408,9 +410,186 @@ footer{
     margin: 10px 0;
     padding-left: 20px;
   }
-  main hr{
-    width: 160vh;
-    margin: auto;
+  .left{
+    font-size: 1.8rem;
+    margin-left: -75px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+  main hr {
+    width: 90vw;
+    margin: 20px auto;
   }
-  
+
+  .secondSection,
+  .thirdSection,
+  .fourthSection,
+  .fifthSection {
+    max-width: 98vw;
+    width: 98vw;
+    margin: 0 auto;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .secondSection h1,
+  .thirdSection h1,
+  .fifthSection h1,
+  .AboutMe h1 {
+    font-size: 1.2rem;
+    margin-top: 30px;
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .thirdSection span {
+    font-size: 0.95rem;
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+    width: 95vw;
+  }
+
+  .box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    margin: 20px 5px;
+  }
+
+  .card img {
+    height: 80px;
+    width: 80px;
+    margin: 10px auto;
+    display: block;
+  }
+
+  .content {
+    width: 95vw;
+    min-width: 0;
+    height: auto;
+    margin-top: 30px;
+    padding: 10px 5px;
+    border-radius: 8px;
+  }
+
+  .content img {
+    width: 90vw !important;
+    height: auto !important;
+    margin: 0 auto 10px auto !important;
+    display: block;
+    border-radius: 8px;
+  }
+
+  .content h2 {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .content p {
+    font-size: 0.95rem;
+    margin: 16px 8px 0 8px;
+    width: 95%;
+    line-height: 1.5;
+    text-align: left;
+    word-break: break-word;
+  }
+
+  .content button {
+    display: block;
+    margin: 18px auto 0 auto;
+    width: 90vw;
+    max-width: 200px;
+    font-size: 1rem;
+    padding: 10px 0;
+    border-radius: 8px;
+  }
+
+  .AboutMe h2 {
+    font-size: 1rem;
+    margin-left: 0;
+    margin-top: 10px;
+    width: 95vw;
+    text-align: center;
+  }
+
+  .AboutMe p,
+  .AboutMe div {
+    width: 95vw;
+    margin-left: 0;
+    margin-top: 10px;
+    font-size: 0.95rem;
+    text-align: left;
+    line-height: 1.5;
+  }
+
+  .fifthSection p {
+    margin-left: 40px;
+    font-size: 12px;
+    text-align: left;
+    width: 95vw;
+  }
+
+  .fifthSection .social-icons {
+    margin: 10px 0;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .fifthSection i {
+    font-size: 20px;
+    margin: 4px 8px;
+  }
+
+  .nameinput,
+  .emailid,
+  .messageinput,
+  .submit-btn {
+    width: 95vw !important;
+    min-width: 0;
+    margin-left: 0 !important;
+    margin-top: 10px !important;
+    padding: 10px !important;
+    font-size: 0.95rem !important;
+    box-sizing: border-box;
+  }
+
+  .firstSection {
+    flex-direction: column;
+    margin: 80px 0 30px 0;
+    gap: 20px;
+  }
+
+  .leftsection {
+    margin: 20px 0 0 0;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .round {
+    width: 160px;
+    height: 160px;
+    margin-top: 10px;
+    margin-left: 130px;
+  }
+
+  .round img {
+    width: 150px;
+    height: 150px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .footer{
+    font-size: 13px;
+    height: 25px; 
+  }
 }
