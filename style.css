@@ -392,7 +392,7 @@ footer{
   .nav-links {
     display: none;
     flex-direction: column;
-    width: 100vw;
+    width: 300px;
     background-color: #0e0e46;
     position: absolute;
     top: 60px;
