@@ -1,15 +1,29 @@
- var typed = new Typed('#element', {
+var typed = new Typed('#element', {
       strings: ['Web Developer'],
       typeSpeed: 50,
     });
 
-    window.addEventListener('scroll',()=>{
-    const navbar = document.querySelector('nav');
-    if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
+let lastScrollY = window.scrollY;
+const navbar = document.querySelector('nav');
+
+window.addEventListener('scroll', () => {
+  // Only apply this on screens <= 850px
+  if (window.innerWidth <= 850) {
+    if (window.scrollY < lastScrollY) {
+      // Scrolling up
+      navbar.classList.add('navbar-fixed');
+      navbar.style.top = '0';
     } else {
-        navbar.classList.remove('scrolled');
+      // Scrolling down
+      navbar.style.top = '-100px'; // Hide navbar
+      setTimeout(() => navbar.classList.remove('navbar-fixed'), 300);
     }
+    lastScrollY = window.scrollY;
+  } else {
+    // On larger screens, always fixed (if you want)
+    navbar.classList.add('navbar-fixed');
+    navbar.style.top = '0';
+  }
 });
 
 
