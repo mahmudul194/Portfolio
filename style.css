@@ -513,7 +513,7 @@ footer{
 
   .AboutMe h2 {
     font-size: 1rem;
-    margin-left: 0;
+    margin-left: 5px;
     margin-top: 10px;
     width: 95vw;
     text-align: center;
@@ -522,7 +522,7 @@ footer{
   .AboutMe p,
   .AboutMe div {
     width: 95vw;
-    margin-left: 9px;
+    margin-left: 20px;
     margin-top: 10px;
     font-size: 0.95rem;
     text-align: left;
