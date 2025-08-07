@@ -7,7 +7,6 @@ let lastScrollY = window.scrollY;
 const navbar = document.querySelector('nav');
 
 window.addEventListener('scroll', () => {
-  // Only apply this on screens <= 850px
   if (window.innerWidth <= 850) {
     if (window.scrollY < lastScrollY) {
       // Scrolling up
@@ -20,7 +19,12 @@ window.addEventListener('scroll', () => {
     }
     lastScrollY = window.scrollY;
   } else {
-    // On larger screens, always fixed (if you want)
+    // Desktop: transparent when scrolling down, solid otherwise
+    if (window.scrollY > 0) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
     navbar.classList.add('navbar-fixed');
     navbar.style.top = '0';
   }
