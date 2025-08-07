@@ -10,9 +10,6 @@ body{
     background-color: rgb(10 10 31);
     color: white;
     font-family: "Outfit", sans-serif;
-    
-    /* scrollbar-width: thin; 
-    scrollbar-color: #888 transparent; */
 }
 ::-webkit-scrollbar {
   width: 8px;
@@ -165,7 +162,6 @@ main hr{
     display: flex;
 }
 .card{
-    /* background-color: rgb(21, 20, 72); */
     margin:50px 40px;
 }
 .card img{
@@ -380,7 +376,7 @@ footer{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding: 5px 10vw; /* less horizontal padding */
+    padding: 5px 10vw; 
   }
 
   .right {
@@ -573,7 +569,7 @@ footer{
 
   .firstSection {
     flex-direction: column;
-    align-items: center;      /* Ensure children are centered */
+    align-items: center;      
     margin: 80px 0 30px 0;
     gap: 20px;
   }
@@ -582,10 +578,10 @@ footer{
     width: 160px;
     height: 160px;
     margin: 10px auto 20px 101px;
-    display: flex;            /* Center image inside */
+    display: flex;            
     align-items: center;
     justify-content: center;
-    position: static;         /* Remove relative positioning */
+    position: static;         
     background-color: rgb(75, 75, 186);
     border-radius: 50%;
     overflow: hidden;
@@ -596,7 +592,7 @@ footer{
     height: 150px;
     object-fit: cover;
     border-radius: 50%;
-    position: static;         /* Remove absolute/relative positioning */
+    position: static;         
     transform: none;
     margin: 0;
     display: block;
