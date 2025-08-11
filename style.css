@@ -689,3 +689,19 @@ footer{
       cursor: pointer;
     }
 }
+
+@media screen and (max-width: 375px) {
+  .box {
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+    }
+}
+@media screen and (max-width: 348px) {
+  .box{
+        flex-direction: row;
+        align-items: center;
+        gap: 2px;
+        width: 12px;
+  }
+}
